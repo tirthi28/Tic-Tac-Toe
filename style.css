@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Added padding */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change to use fractions for responsiveness */
+    gap: 5px;
+    width: 90vw; /* Use viewport width for responsiveness */
+    max-width: 300px; /* Max width for larger screens */
+}
+
+.cell {
+    width: 100%; /* Make cells fill available space */
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: white;
+}
+
+#winner {
+    background-color: lightgreen;
+}
